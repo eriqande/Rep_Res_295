@@ -1,0 +1,56 @@
+---
+title: "Scratch_pad_forhomework_Week2"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r calculations}
+1 / 200 * 30
+(59 + 73 + 2) / 3
+sin(pi / 2)
+```
+
+```{r createobject}
+x <- 3 * 4
+```
+
+```{r createobject}
+x <- 3 * 4
+```
+
+```{r inspecting names}
+x
+#> [1] 12
+```
+
+```{r inspecting names}
+x
+this_is_a_really_long_name <- 3.5
+r_rocks <- 2 ^ 3
+```
+
+```{r file structure}
+library(tidyverse)
+
+ggplot(diamonds, aes(carat, price)) + 
+  geom_hex()
+ggsave("diamonds.pdf")
+
+write_csv(diamonds, "diamonds.csv")
+```
+
+Excercises for chapter 11
+
+1.  What function would you use to read a file where fields were separated with "|"?
+
+read_delim()
+
+2.  Apart from file, skip, and comment, what wother arguments to read_csv() and read tsv() have in common?
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).
